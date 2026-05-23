@@ -4,15 +4,20 @@
 #
 # A "shared base" carries the resources every voice using a given
 # engine needs: the model architecture weights, tokens file, and
-# espeak-ng phoneme data. ~95 MB compressed for Kokoro. Voices that
-# reference the same `sharedBaseId` download this archive once and
-# only need ~2 MB per voice thereafter.
+# espeak-ng phoneme data. ~120 MB compressed for Kokoro v1.0.
+#
+# Archive format: AppleArchive .aar (LZFSE compressed). Chosen over
+# .tar.zst because Apple's `Compression` framework can extract .aar
+# natively (`AppleArchive` framework, iOS 14+ / macOS 11+) with no
+# third-party Swift dependency. Produce one from a directory with:
+#
+#   aa archive -d <base-id>-v<version>/ -o <base-id>-v<version>.aar -a lzfse
 #
 # Usage:
 #   ./scripts/publish-base.sh <base-id> <version> <path-to-archive>
 #
 # Example:
-#   ./scripts/publish-base.sh kokoro-en-base 1.0 ~/work/kokoro-en-base.tar.zst
+#   ./scripts/publish-base.sh kokoro-en-base 1.0 ~/work/kokoro-en-base-v1.0.aar
 #
 # What it does:
 #   1. Computes SHA-256 + byte size of the archive
@@ -55,7 +60,7 @@ fi
 LOCALE="${BASE_ID#kokoro-}"
 LOCALE="${LOCALE%-base}"
 TAG="base-${LOCALE}-v${VERSION}"
-ASSET_NAME="${BASE_ID}-v${VERSION}.tar.zst"
+ASSET_NAME="${BASE_ID}-v${VERSION}.aar"
 
 # --- Compute hash + size ----------------------------------------------
 

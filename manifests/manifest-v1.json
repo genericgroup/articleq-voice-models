@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": "2026.05.23-1",
+  "manifestVersion": "2026.05.23-2",
   "featureFlags": {
     "premiumTTSEnabled": true
   },
@@ -9,9 +9,9 @@
       "identifier": "kokoro-en-base-v1.0",
       "engine": "kokoro",
       "engineVersion": "1.0",
-      "downloadSizeBytes": 123367736,
-      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.0/kokoro-en-base-v1.0.tar.zst",
-      "sha256": "ef5deb282941fc39d37b72ce0a2c3382911e86e027bbe2e21e7a53c7a899d771"
+      "downloadSizeBytes": 127628247,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.0/kokoro-en-base-v1.0.aar",
+      "sha256": "d8604300ab5402732d9a5d53cbcf5fc497694be9202f5ff7d1802dbba490b738"
     }
   ],
   "voices": [
