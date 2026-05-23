@@ -80,7 +80,7 @@ if gh release view "$TAG" >/dev/null 2>&1; then
 else
     echo "→ Creating GitHub Release $TAG…"
     gh release create "$TAG" "$STAGED" \
-        --title "${SHORT_NAME^} voice v${VERSION}" \
+        --title "$(echo "${SHORT_NAME:0:1}" | tr '[:lower:]' '[:upper:]')${SHORT_NAME:1} voice v${VERSION}" \
         --notes "Voice file for ArticleQ Premium TTS.
 
 Voice ID: \`$VOICE_ID\`

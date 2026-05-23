@@ -80,7 +80,7 @@ if gh release view "$TAG" >/dev/null 2>&1; then
 else
     echo "→ Creating GitHub Release $TAG…"
     gh release create "$TAG" "$STAGED" \
-        --title "Kokoro ${LOCALE^^} shared base v${VERSION}" \
+        --title "Kokoro $(echo "$LOCALE" | tr '[:lower:]' '[:upper:]') shared base v${VERSION}" \
         --notes "Shared resource pack for the Kokoro TTS engine ($LOCALE locale).
 
 This archive contains the model architecture weights, tokens file,
