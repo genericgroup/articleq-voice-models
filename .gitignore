@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Build artifacts from local voice processing — these shouldn't be
+# committed to the repo. They live in GitHub Releases instead.
+*.onnx
+*.bin
+*.tar.zst
+*.tar.gz
+*.zip
+work/
+tmp/
+build/
+
+# Logs from publish scripts
+*.log
+
+# Local scratch
+.scratch/

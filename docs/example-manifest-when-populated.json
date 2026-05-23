@@ -1,0 +1,90 @@
+{
+  "_comment": "REFERENCE ONLY. This file shows what manifests/manifest-v1.json should look like once the v1 voice catalog has been published. The live manifest in manifests/manifest-v1.json starts empty with the feature flag OFF; flip it on after the first voice's files are uploaded and the SHA-256 + cdnURL values below are filled in with real values from the publish-voice.sh / publish-base.sh scripts.",
+  "schemaVersion": 1,
+  "manifestVersion": "2026.05.22-1",
+  "featureFlags": {
+    "premiumTTSEnabled": true
+  },
+  "sharedBases": [
+    {
+      "identifier": "kokoro-en-base-v1.0",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "downloadSizeBytes": 99614720,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.0/kokoro-en-base-v1.0.tar.zst",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-base.sh"
+    }
+  ],
+  "voices": [
+    {
+      "id": "kokoro-en-bf-emma",
+      "displayName": "Emma",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "narrator",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "sharedBaseId": "kokoro-en-base-v1.0",
+      "downloadSizeBytes": 2097152,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/voice-emma-v1.0/kokoro-en-bf-emma-v1.0.bin",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-voice.sh",
+      "sampleSentence": "The quick brown fox jumps over the lazy dog while the morning light filters through the trees."
+    },
+    {
+      "id": "kokoro-en-am-michael",
+      "displayName": "Michael",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "sharedBaseId": "kokoro-en-base-v1.0",
+      "downloadSizeBytes": 2097152,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/voice-michael-v1.0/kokoro-en-am-michael-v1.0.bin",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-voice.sh",
+      "sampleSentence": "From the depths of the ocean to the heights of the mountains, this is a story about the natural world."
+    },
+    {
+      "id": "kokoro-en-bf-isabella",
+      "displayName": "Isabella",
+      "locale": "en-GB",
+      "gender": "female",
+      "style": "conversational",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "sharedBaseId": "kokoro-en-base-v1.0",
+      "downloadSizeBytes": 2097152,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/voice-isabella-v1.0/kokoro-en-bf-isabella-v1.0.bin",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-voice.sh",
+      "sampleSentence": "Right, so the news this morning has been absolutely brilliant — let me walk you through what's happened."
+    },
+    {
+      "id": "kokoro-en-am-fenrir",
+      "displayName": "Fenrir",
+      "locale": "en-GB",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "sharedBaseId": "kokoro-en-base-v1.0",
+      "downloadSizeBytes": 2097152,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/voice-fenrir-v1.0/kokoro-en-am-fenrir-v1.0.bin",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-voice.sh",
+      "sampleSentence": "In the quiet hours before dawn, the city awakened slowly, each street finding its own rhythm."
+    },
+    {
+      "id": "kokoro-en-af-sarah",
+      "displayName": "Sarah",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "conversational",
+      "engine": "kokoro",
+      "engineVersion": "1.0",
+      "sharedBaseId": "kokoro-en-base-v1.0",
+      "downloadSizeBytes": 2097152,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/voice-sarah-v1.0/kokoro-en-af-sarah-v1.0.bin",
+      "sha256": "REPLACE_WITH_REAL_SHA256_FROM_publish-voice.sh",
+      "sampleSentence": "Hey, so I was reading this article earlier and it had the most fascinating take on the whole situation."
+    }
+  ]
+}
