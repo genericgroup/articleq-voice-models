@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": "2026.05.24-2",
+  "manifestVersion": "2026.05.24-3",
   "featureFlags": {
     "premiumTTSEnabled": true
   },
@@ -10,6 +10,7 @@
       "engine": "supertonic",
       "engineVersion": "3.0",
       "downloadSizeBytes": 397581356,
+      "unpackedSizeBytes": 401276744,
       "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/supertonic-base-v3.0/supertonic-base-v3.0.aar",
       "sha256": "36e52b58ae24f7b1a70f697539c31375173b8b37bca3ed7839b1e3eaebd7eb05"
     }
@@ -28,6 +29,54 @@
       "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
     },
     {
+      "id": "supertonic-en-m-m2",
+      "displayName": "Mason",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "M2.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-m-m3",
+      "displayName": "Miles",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "M3.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-m-m4",
+      "displayName": "Maxwell",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "M4.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-m-m5",
+      "displayName": "Morgan",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "M5.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
       "id": "supertonic-en-f-f1",
       "displayName": "Fiona",
       "locale": "en-US",
@@ -37,6 +86,54 @@
       "engineVersion": "3.0",
       "sharedBaseId": "supertonic-base-v3.0",
       "supertonicVoiceStyleFile": "F1.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-f-f2",
+      "displayName": "Felicity",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "F2.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-f-f3",
+      "displayName": "Florence",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "F3.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-f-f4",
+      "displayName": "Frances",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "F4.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-f-f5",
+      "displayName": "Faye",
+      "locale": "en-US",
+      "gender": "female",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "F5.json",
       "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
     }
   ]
