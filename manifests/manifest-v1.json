@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": "2026.05.24-1",
+  "manifestVersion": "2026.05.23-2",
   "featureFlags": {
     "premiumTTSEnabled": true
   },
   "sharedBases": [
     {
-      "identifier": "kokoro-en-base-v1.1",
+      "identifier": "kokoro-en-base-v1.0",
       "engine": "kokoro",
       "engineVersion": "1.0",
-      "downloadSizeBytes": 351748854,
-      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.1/kokoro-en-base-v1.1.aar",
-      "sha256": "12b17014d042b44912937433b4d87f8c20e075a205fb7d9a653edade5966aba1"
+      "downloadSizeBytes": 127628247,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.0/kokoro-en-base-v1.0.aar",
+      "sha256": "d8604300ab5402732d9a5d53cbcf5fc497694be9202f5ff7d1802dbba490b738"
     }
   ],
   "voices": [
@@ -23,7 +23,7 @@
       "style": "narrator",
       "engine": "kokoro",
       "engineVersion": "1.0",
-      "sharedBaseId": "kokoro-en-base-v1.1",
+      "sharedBaseId": "kokoro-en-base-v1.0",
       "kokoroSpeakerId": 21,
       "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
     }
