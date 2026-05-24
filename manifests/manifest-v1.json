@@ -1,30 +1,42 @@
 {
   "schemaVersion": 1,
-  "manifestVersion": "2026.05.23-2",
+  "manifestVersion": "2026.05.24-2",
   "featureFlags": {
     "premiumTTSEnabled": true
   },
   "sharedBases": [
     {
-      "identifier": "kokoro-en-base-v1.0",
-      "engine": "kokoro",
-      "engineVersion": "1.0",
-      "downloadSizeBytes": 127628247,
-      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/base-en-v1.0/kokoro-en-base-v1.0.aar",
-      "sha256": "d8604300ab5402732d9a5d53cbcf5fc497694be9202f5ff7d1802dbba490b738"
+      "identifier": "supertonic-base-v3.0",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "downloadSizeBytes": 397581356,
+      "cdnURL": "https://github.com/genericgroup/articleq-voice-models/releases/download/supertonic-base-v3.0/supertonic-base-v3.0.aar",
+      "sha256": "36e52b58ae24f7b1a70f697539c31375173b8b37bca3ed7839b1e3eaebd7eb05"
     }
   ],
   "voices": [
     {
-      "id": "kokoro-en-bf-emma",
-      "displayName": "Emma",
-      "locale": "en-GB",
+      "id": "supertonic-en-m-m1",
+      "displayName": "Marcus",
+      "locale": "en-US",
+      "gender": "male",
+      "style": "narrator",
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "M1.json",
+      "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
+    },
+    {
+      "id": "supertonic-en-f-f1",
+      "displayName": "Fiona",
+      "locale": "en-US",
       "gender": "female",
       "style": "narrator",
-      "engine": "kokoro",
-      "engineVersion": "1.0",
-      "sharedBaseId": "kokoro-en-base-v1.0",
-      "kokoroSpeakerId": 21,
+      "engine": "supertonic",
+      "engineVersion": "3.0",
+      "sharedBaseId": "supertonic-base-v3.0",
+      "supertonicVoiceStyleFile": "F1.json",
       "sampleSentence": "Good morning. Today's news brings updates from across the world, with new developments in technology, science, and culture that may interest you."
     }
   ]
